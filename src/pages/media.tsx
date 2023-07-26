@@ -1,15 +1,15 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import styles from "@/styles/Home.module.css";
-import CountryList from "@/components/CountryList/CountryList";
+// import CountryList from "@/components/CountryList/CountryList";
 
-import NarrativesByMedia from "@/components/LatestNarratives/NarrativesByMedia";
-import { useRouter } from "next/router";
+// import NarrativesByMedia from "@/components/LatestNarratives/NarrativesByMedia";
+// import { useRouter } from "next/router";
 
 function Media() {
-  const router = useRouter();
-  const { locale } = router;
-  const [country, setCountry] = useState("");
+  // const router = useRouter();
+  // const { locale } = router;
+  // const [country, setCountry] = useState("");
 
   // useEffect(() => {
   //   if (locale === "it") {
@@ -33,7 +33,7 @@ function Media() {
   //   }
   // }, [locale]);
 
-  const [media, setMedia] = useState("all");
+  // const [media, setMedia] = useState("all");
 
   return (
     <>
@@ -44,7 +44,7 @@ function Media() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <CountryList
+        {/* <CountryList
           // @ts-ignore
           country={country}
           // @ts-ignore
@@ -57,7 +57,8 @@ function Media() {
           media={media}
           // @ts-ignore
           setMedia={setMedia}
-        />
+        /> */}
+        media
       </main>
     </>
   );
